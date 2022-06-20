@@ -1,0 +1,10 @@
+{% if notes_list %}
+{% for note in notes_list %}
+<div>
+    <textarea>{{ note.text }}</textarea>
+</div>
+<hr>
+{% endfor %}
+{% else %}
+<p>Нет заметок</p>
+{% endif %}

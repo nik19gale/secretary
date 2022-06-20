@@ -1,0 +1,10 @@
+{% if projects_list %}
+<ul>
+    {% for project in projects_list %}
+    {% comment %} <li><a href="/notes/{{ project.name }}">{{ project.name }}</a></li> {% endcomment %}
+    <li><a href="{% url 'notes:tasks' project.name %}">{{ project.name }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Нет активных проектов</p>
+{% endif %}

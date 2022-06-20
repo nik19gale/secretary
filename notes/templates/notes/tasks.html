@@ -1,0 +1,10 @@
+{% if tasks_list %}
+<ul>
+    {% for task in tasks_list %}
+    {% comment %} <li><a href="/notes/{{ task.project }}/{{ task.name }}">{{ task.name }}</a></li> {% endcomment %}
+    <li><a href="{% url 'notes:notes' task.project task.name %}">{{ task.name }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>Нет активных заданий</p>
+{% endif %}
