@@ -1,5 +1,5 @@
 ENG (partly RU).
 
-This is automatic development helping secretary.
+This is an automatic secretary helping the developer.
 
-App 'notes' manages notes about every single task of every project.
+The app 'notes' saves and manages notes about every single task of every project.
